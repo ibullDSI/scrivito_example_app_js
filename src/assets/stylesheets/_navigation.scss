@@ -267,6 +267,16 @@
   }
 }
 
+// Fix navigation overlapping anchor issue
+// Source: https://stackoverflow.com/a/38106970/881759
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+
 /* menu toggle */
 
 .menu-toggle {
